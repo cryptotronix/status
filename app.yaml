@@ -7,4 +7,6 @@ threadsafe: true
 handlers:
 - url: /.*
   script: status.application
+  login: required
+  
   
