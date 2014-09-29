@@ -13,7 +13,7 @@ class MainPage(webapp2.RequestHandler):
 
         if user:
             self.response.headers['Content-Type'] = 'text/plain'
-            self.response.write('Hello, ' + user.nickname())
+            self.response.write('Howdy, ' + user.nickname())
             self.response.write(self.get_num_cryptocapes())
         else:
             self.redirect(users.create_login_url(self.request.uri))
